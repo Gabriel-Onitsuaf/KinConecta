@@ -53,7 +53,7 @@ public class TripBookingsService {
         existing.setNotes(updatedTripBookings.getNotes());
         existing.setCreatedAt(updatedTripBookings.getCreatedAt());
         existing.setUpdatedAt(updatedTripBookings.getUpdatedAt());
-        existing.setIsFeatured(updatedTripBookings.getIsFeatured());
+        existing.setFavorites(updatedTripBookings.getFavorites());
 
 
         return tripBookingsRepository.save(existing);
