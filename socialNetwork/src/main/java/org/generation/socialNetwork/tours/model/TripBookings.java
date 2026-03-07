@@ -45,10 +45,9 @@ public class TripBookings {
     @Column(nullable = false, name="updated_at")
     private Date updatedAt;
 
-    @Column(name="is_featured")
-    private boolean isFeatured;
+    @Column
+    private Boolean favorites;
 
-    private
 
 
 }

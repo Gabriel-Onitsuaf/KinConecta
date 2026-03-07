@@ -1,6 +1,7 @@
 package org.generation.socialNetwork.tours.controller;
 
 import org.generation.socialNetwork.tours.model.Tour;
+import org.generation.socialNetwork.tours.model.TourDestinations;
 import org.generation.socialNetwork.tours.service.TourService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -44,5 +45,10 @@ public class TourController {
             @RequestBody Tour tour
     ) {
         return tourService.updateTourById(id, tour);
+    }
+
+    @PostMapping(path="/{tourId}-add-destination")
+    public Tour addTourDestination(@PathVariable("tourId") Long tourId){
+        return tourService.addTourDestination(tourId);
     }
 }
