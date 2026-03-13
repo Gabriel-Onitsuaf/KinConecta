@@ -35,7 +35,7 @@
     const STYLE_ID = "kc-under-construction-style";
     const MODAL_ID = "kcUnderConstructionModal";
     const TITLE_ID = "kcUnderConstructionTitle";
-    const DEFAULT_IMAGE_SRC = "../../../assets/en%20construcci%C3%B3n.jpeg";
+    const DEFAULT_IMAGE_SRC = "../../../assets/en-construccion.jpeg";
     // true: card completo con imagen de fondo | false: card tradicional con imagen dentro.
     const USE_IMAGE_CARD_BACKGROUND = false;
 
