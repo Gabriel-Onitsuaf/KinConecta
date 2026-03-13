@@ -1,0 +1,20 @@
+package org.generation.socialNetwork.profileGuide.model;
+
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.io.Serializable;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode
+public class GuideProfileExpertiseId implements Serializable {
+
+    private Long userId;
+    private Integer expertiseId;
+}

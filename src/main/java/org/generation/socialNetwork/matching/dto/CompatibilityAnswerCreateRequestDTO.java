@@ -1,0 +1,23 @@
+package org.generation.socialNetwork.matching.dto;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import org.generation.socialNetwork.matching.model.*;
+
+@Getter
+@Setter
+@NoArgsConstructor
+public class CompatibilityAnswerCreateRequestDTO {
+
+    private Long compatibilityProfileId;
+    private String questionKey;
+    private String valueText;
+    private BigDecimal valueNumber;
+    private String valueJson;
+    private LocalDateTime createdAt;
+}
